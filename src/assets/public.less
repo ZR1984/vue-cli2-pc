@@ -1,0 +1,362 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+input {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: "Microsoft YaHei";
+    vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    font-size:14px;
+}
+
+a {
+    color: #000;
+}
+
+a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+caption,
+th,
+td {
+    text-align: center;
+    font-weight: normal;
+}
+
+a img,
+iframe {
+    border: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+.my_text_center {
+    text-align: center;
+}
+
+.my_text_right {
+    text-align: right;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+/*flex布局*/
+
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.flex-v {
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.flex-1 {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.flex-align-center {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.flex-pack-center {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.flex-pack-justify {
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+// 清除浮动
+.clearfix:after {
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+//公共padding值
+.p_l30 {
+    padding-left: 30px;
+}
+
+.p_r30 {
+    padding-right: 30px;
+}
+
+.p_t30 {
+    padding-top: 30px;
+}
+
+.p_b30 {
+    padding-bottom: 30px;
+}
+
+.p_l20 {
+    padding-left: 20px;
+}
+
+.p_r20 {
+    padding-right: 20px;
+}
+
+.p_t20 {
+    padding-top: 20px;
+}
+
+.p_b20 {
+    padding-bottom: 20px;
+}
+
+//公共margin值
+.m_t20 {
+    margin-top: 20px;
+}
+
+.m_b20 {
+    margin-bottom: 20px;
+}
+
+.m_l20 {
+    margin-left: 20px;
+}
+
+.m_r20 {
+    margin-right: 20px;
+}
+
+.m_b30 {
+    margin-bottom: 30px;
+}
+
+.m_r30 {
+    margin-right: 30px;
+}
+
+.m_b10 {
+    margin-bottom: 10px;
+}
+
+// 边框
+.border_b {
+    border-bottom: 1px solid #dddddd;
+}
+
+.border_l {
+    border-left: 1px solid #dddddd;
+}
+
+.border-DD {
+    border: 1px solid #DDDDDD;
+}
+
+// 背景颜色
+.bg_colorF0 {
+    background-color: #F08701;
+}
+
+.bg_colorFF {
+    background-color: #ffffff;
+}
+
+.bg_colorF9 {
+    background-color: #F9F9F7;
+}
+
+// 字体颜色
+.color_FF {
+    color: #ffffff;
+}
+
+.color_B3 {
+    color: #B3B3B3;
+}
+
+.color_F0 {
+    color: #F08701;
+}
+
+.color_99 {
+    color: #999999;
+}
+
+.color_2B {
+    color: #2B2F39;
+}
+
+.color_BB {
+    color: #BBC0C5;
+}
+
+.color_D0 {
+    color: #D01718;
+}
+
+.color_33 {
+    color: #333;
+}
+
+.color_2C {
+    color: #2C303A;
+}
+
+//公共字号
+.font_size16 {
+    font-size: 16px;
+}
+
+.font_size22 {
+    font-size: 22px;
+}
+
+.font_size24 {
+    font-size: 24px;
+}
+
+.font_size18 {
+    font-size: 18px;
+}
+
+.font_size38 {
+    font-size: 38px;
+}
+
+//字体加粗
+.font-bold {
+    font-weight: bold;
+}
+
+//字间距
+.letter-space {
+    letter-spacing: 1px;
+}
