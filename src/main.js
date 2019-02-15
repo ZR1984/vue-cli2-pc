@@ -5,6 +5,7 @@ import App from './App'
 import router from './router'
 import https from './common/https'
 import store from './store/store'
+import './assets/css/public.less'
 
 Vue.prototype.$https = https
 
