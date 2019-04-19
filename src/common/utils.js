@@ -228,6 +228,36 @@ export const isNot = function(val) {
 }
 
 /**
+ * @description 复制不显示在页面上的数据
+ */
+export const copyData = function(data) {
+  var Url2 = data;
+  var oInput = document.createElement("input");
+  oInput.value = Url2;
+  document.body.appendChild(oInput);
+  oInput.select(); // 选择对象
+  document.execCommand("Copy"); // 执行浏览器复制命令
+  oInput.style.display = "none";
+}
+
+
+
+export const base64ToBlob = function(code) {
+  let parts = code.split(";base64,");
+  let contentType = parts[0].split(":")[1];
+  let raw = window.atob(parts[1]);
+  let rawLength = raw.length;
+
+  let uInt8Array = new Uint8Array(rawLength);
+
+  for (let i = 0; i < rawLength; ++i) {
+    uInt8Array[i] = raw.charCodeAt(i);
+  }
+  return new Blob([uInt8Array], { type: contentType });
+}
+
+
+/**
  * @desc js实现php ksort方法
  * @param {Array} inputArr 排序数据
  * @param {String} sort_flags 排序方式
