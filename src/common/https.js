@@ -1,6 +1,9 @@
 import axios from 'axios';
 import qs from 'qs';
 // import store from '../store/store'
+import {urlConfig} from '../../static/urlConfig'
+
+axios.defaults.baseURL = urlConfig.baseUrl
 
 // axios.defaults.baseURL = 'http://web.ygbxsc.com/index/'//线上
 // axios.defaults.baseURL = 'http://106.37.74.50:13023'//线上
