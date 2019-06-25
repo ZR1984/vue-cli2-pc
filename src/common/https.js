@@ -73,7 +73,7 @@ export default {
       // headers:headers
     }).then((response) => {
       // return Success(response.data)
-      return response.data
+      return response.data.data
     }).catch((res) => {
       // return Fail(res)
       return res
@@ -88,7 +88,7 @@ export default {
       // headers: headers
     }).then((response) => {
       // return Success(response.data)
-      return response.data
+      return response.data.data
     }).catch((res) => {
       // return Fail(res)
       return res
@@ -104,7 +104,7 @@ export default {
       // headers: headers
     }).then((response) => {
       // return Success(response.data)
-      return response.data
+      return response.data.data
     }).catch((res) => {
       // return Fail(res)
       return res
@@ -119,7 +119,7 @@ export default {
       // headers:headers
     }).then((response) => {
       // return Success(response.data)
-      return response.data
+      return response.data.data
     }).catch((res) => {
       // return Fail(res)
       return res
@@ -134,7 +134,7 @@ export default {
       // headers: headers
     }).then((response) => {
       // return Success(response.data)
-      return response.data
+      return response.data.data
     }).catch((res) => {
       // return Fail(res)
       return res
