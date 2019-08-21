@@ -256,3 +256,24 @@ export const base64ToBlob = function (code) {
     type: contentType
   });
 }
+
+
+/**
+ * @description 获取search查询参数
+ */
+
+export const getQueryString = function() {
+  const url = location.search;
+  const rs = {}
+  if (url.indexOf('?') === 0) {
+    const querystring = url.substr(1);
+    const kvArr = querystring.split('&');
+    kvArr.forEach(item => {
+      const temp = item.split('=')
+      const key = temp[0];
+      const val = temp[1];
+      rs[key] = val
+    })
+  }
+  return rs
+}
